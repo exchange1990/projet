@@ -9,6 +9,11 @@
 </head>
 <body>
     <header>
-        <h1>accueil</h1>
-        <?php  require_once'php/view/nav.php'?>
+        <h1>simplon</h1>
+        <nav>
+            <a href="index.php">accueil</a>
+            <a href="service.php">service</a>
+            <a href="contact.php">contact</a>
+        </nav>
     </header>
+    <main>
