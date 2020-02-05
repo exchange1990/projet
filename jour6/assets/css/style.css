@@ -1,1 +1,14 @@
-/* test */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    border:solid 3px greenyellow;
+}
+nav{
+    border:solid 3px greenyellow;
+}
+body{
+    background-color: rgb(9, 187, 241);
+}
