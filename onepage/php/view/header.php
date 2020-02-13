@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <STYle>
+    nav{
+        border:solid 5px blue;
+        padding:20px;
+       
+    }
+    h1{
+        text-align:center;
+        border-bottom:solid 3px blue;
+        color:grey;
+    }
+  
+    </STYle>
 </head>
 <body>
 <header>

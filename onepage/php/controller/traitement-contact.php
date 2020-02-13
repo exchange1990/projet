@@ -6,14 +6,15 @@
       $email    =$_REQUEST["email"];
       $message  =$_REQUEST["message"];
 
-    $messageEnregistré=
+    $messageEnregistre=
     <<<text
      nom:    $nom
      email:  $email
      message:$message
+
      text;
 
-     file_put_contents("php/model/contact.txt", $messageEnregistré, FILE_APPEND);
+     file_put_contents("php/model/contact.txt", $messageEnregistre, FILE_APPEND);
      echo "merci pour votre message $nom";
 
   }
