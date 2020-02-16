@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    border:solid 5px black;
+    background-color: rgb(12, 189, 233);
+}
+.description {
+    color:blue;
+    border:solid black 3px;
+    background-color: rgb(93, 235, 11);
+}
+.titre{
+    color:green;
+    border:solid black 3px;
+}
+body{
+    background-color: rgb(197, 220, 231);
+}
