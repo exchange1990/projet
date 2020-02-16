@@ -19,8 +19,9 @@ function  displayRandomTerm($array)
     </div>
 
     html;
-    echo $index;
+   
     echo $html;
+    echo $index;
     
     
    
@@ -49,7 +50,7 @@ function  displayRandomTerm($array)
     <main>
         <form action="">
         <?php echo displayRandomTerm($glossaire) ?>
-            <label for="">actualiser</label>
+            <label for=""></label>
             <input type="submit"  value="actualiser">
             
         </form>
