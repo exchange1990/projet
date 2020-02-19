@@ -33,7 +33,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-close-button {
+#close-button {
     font-size: 1.2rem;
     color: #ccc;
     padding: 10px 30px;
