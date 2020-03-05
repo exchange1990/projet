@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    border:solid 4px black;
+}
+h1:hover{
+    border-radius: 50px;
+}
+.container {
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+.container img {
+    width:calc(100% / 3);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+    color:blue;
+}
+nav a:hover{
+    color:red;
+}
+

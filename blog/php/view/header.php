@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-        
-
-        <input type="button" value="users" >
-        <button id="btn"></button>
-    
-
-
-
-
-
-    <script src="assets/js/app.js"></script>
-</body>
-</html>
+<header>
+    <h1>blog news</h1>
+    <nav>
+        <a href="index.php">accueil</a>
+        <a href="news.php">news</a>
+        <a href="contact.php">contact</a>
+    </nav>
+</header>
+<main>

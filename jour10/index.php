@@ -3,12 +3,12 @@ require_once "php/model/glossaire.php";
 
 function  displayRandomTerm($array)
 {
-    $lenght=count($array);
-    $index=mt_rand(0,$lenght-1);
-    $title=$array[$index]['title'];
-    $description=$array[$index]['description'];
-    $html=
-    <<<html
+    $lenght = count($array);
+    $index = mt_rand(0, $lenght - 1);
+    $title = $array[$index]['title'];
+    $description = $array[$index]['description'];
+    $html =
+        <<<html
     <div class="container">
     <div class="titre">
     <h1>le titre est: $title</h1>
@@ -19,15 +19,9 @@ function  displayRandomTerm($array)
     </div>
 
     html;
-   
+
     echo $html;
     echo $index;
-    
-    
-   
-   
-    
-
 }
 
 
@@ -37,27 +31,30 @@ function  displayRandomTerm($array)
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>affichage d'un tableau aléatoirement</h1>
     </header>
     <main>
         <form action="">
-        <?php echo displayRandomTerm($glossaire) ?>
+            <?php echo displayRandomTerm($glossaire) ?>
             <label for=""></label>
-            <input type="submit"  value="actualiser">
-            
+            <input type="submit" value="actualiser">
+
         </form>
     </main>
     <footer>
         <p>tous les droits sont résérvès</p>
     </footer>
-    
+
 </body>
+
 </html>
