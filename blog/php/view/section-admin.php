@@ -12,5 +12,6 @@
         <div class="confirmation">
             <?php require_once "php/controller/form-articles.php" ?>
         </div>
+        
     </form>
 </section>
