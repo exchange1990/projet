@@ -4,6 +4,7 @@
 if (count($_REQUEST) > 0)
 {
     // DEBUG
+    //debug
     // echo "JE DOIS TRAITER LE FORMULAIRE";
 
     // $_REQUEST EST UN TABLEAU ASSOCIATIF
