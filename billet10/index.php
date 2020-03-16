@@ -10,8 +10,11 @@
 <input type="text" name="billet" placeholder="taper un nombre" >
 <input type="submit" name="envoyer" value="envoyer">
 <br>
+
 <?php
 require_once "controller.php";
+
+
 ?>
 
 </form>
