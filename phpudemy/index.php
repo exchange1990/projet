@@ -1,27 +1,33 @@
 <?php
-if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-    if ($_FILES['image']['size'] <= 8000000) {
-        $informationImage = pathinfo($_FILES['image']['name']);
-        $extensionImage = $informationImage['extension'];
-        $extensionArray = ['png', 'gif', 'jpg', 'jpeg'];
-        if (in_array($extensionImage, $extensionArray)) {
-            move_uploaded_file($_FILES['image']['tmp_name'],'/upload' . time() .rand().rand().'.'.$extensionImage);
-            echo 'envoi bien recu';
-        }
-    }
-}
-echo '<form method="post" action="index.php" enctype="multipart/form-data">
-     <h1>formulaire</h1>
-     <p>
+    require_once 'lib/functions.php';
 
-     <input type="file" name="image"><br>
-     <button type="submit" >envoyer</button>
+    // $pdo = getConnection();
 
+    // superglobales php
+    // $_GET
+    // $_POST
+    // $_REQUEST => $_GET, $_POST, $_COOKIES
+    // $_SERVER
+    // $_SESSION
+    // $_FILES
 
-     </p>
+    handleRequest($_FILES);
 
-
-
-
-</form>';
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>File Uploader</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+    <label for="file-upload">Choose file to upload</label>
+    <input type="file" name="fileUpload" id="file-upload">
+    <button type="submit" name="submit">Save</button>
+    </form>
+</body>
+</html>

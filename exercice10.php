@@ -1,67 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="POST">
+
+<label>votre nom
+<input type="text" name="nom">
+</label>
+<label>votre prenom
+<input type="text" name="prenom">
+</label>
+<input type="submit" name="envoyer">
+<div>
 <?php
+if(isset($_POST['nom']) && isset($_POST['prenom'])){
+
+$nom=$_POST['nom'];
+$prenom=$_POST['prenom'];
 
 
-function distribuerBillet ($billet){
-    
-    $phrase="";
-    
+$requetesql=
 
-switch($billet){
-    case($billet>200):
-       $retour= intval($billet/200);
-       $billet=$billet-($retour*200);
-       $val=$retour." x 200,";
-       $phrase=$val;
-  
-      
-        
-    case($billet>100):
-            $retour= intval($billet/100);
-            $billet=$billet-($retour*100);
-            $val1=$retour." x 100,";
-            $phrase=$phrase.$val1;
-       
-           
-             
-    case($billet>50):
-                $retour= intval($billet/50);
-                $billet=$billet-($retour*50);
-                $val2=$retour." x 50,";
-                $phrase=$phrase.$val2;
-           
-               
-                 
-
-    
-    case($billet>20):
-        $retour=intval($billet/20);
-        $billet=$billet-($retour*20);
-        $val3=$retour." x 20,";
-        $phrase=$phrase.$val3;
-  
-    case($billet>10):
-        $retour=intval($billet/10);
-        $billet=$billet-($retour*10);
-        $val4=$retour." x 10,";
-        $phrase=$phrase.$val4;
-    
-    case($billet>5):
-        $retour=intval($billet/5);
-        $billet=$billet-($retour*5);
-        $val5=$retour." x 5";
-        $phrase=$phrase.$val5;
-    break;
-    
+'insert into contact
+(nom,prenom)
+values($nom,$prenom)';
+$pdo=new PDO("mysql:dbname=blog;host=localhost;charset=utf-8","root","");
+$pdo->exec($requetesql);
 
 
-        }
-         
 
-    
-    
 
-return $phrase;
+
+
 
 }
 
-echo distribuerBillet($billet);
+?>
+
+</div>
+
+
+
+
+</form>
+    
+</body>
+</html>

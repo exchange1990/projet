@@ -28,9 +28,9 @@ function insererLigneSQL($nomTable, $tabAsso)
 <<<CODESQL
 
 INSERT INTO $nomTable
-(nom, prenom, adresse, raison, numero, date) 
+(nom, prenom, adresse, raison, numero, dateDeclaration) 
 VALUES 
-(:nom, :prenom, :adresse, :raison, :numero, :date) 
+(:nom, :prenom, :adresse, :raison, :numero, :dateDeclaration) 
 
 CODESQL;
     // ENSUITE, ON VA ENVOYER LA REQUETE SQL PREPAREE

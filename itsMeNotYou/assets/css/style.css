@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    color:green;
+    border:solid 4px black;
+}
+fieldset input{
+    display: flex;
+    justify-content: space-between;
+}
