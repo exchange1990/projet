@@ -1,0 +1,32 @@
+.form {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.champs{
+    margin-left: 200px;
+    
+}
+.champ{
+    margin-top: 20px;
+   
+        margin-left: 237px;
+        margin-top: 20px;
+        
+
+    }
+.cham{
+    margin-left: 201px;
+    margin-top: 20px;
+}
+.cha{
+    margin-left: 134px;
+    margin-top: 20px;
+
+}
+.ch{
+    margin-left: 281px;
+    margin-top: 20px;
+}
