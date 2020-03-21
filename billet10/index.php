@@ -1,3 +1,15 @@
+<?php
+require_once "php/glossaire.php";
+function afficher($tableau){
+
+    $lenght=count($tableau);
+    $index=mt_rand(0,$lenght-1);
+    $title=$tableau[$index]['title'];
+    $description=$tableau[$index]['description'];
+    $text="<h1>$title</h1><p>$description</p>";
+    echo $text;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +17,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-<form method="post">
-<input type="text" name="billet" placeholder="taper un nombre" >
-<input type="submit" name="envoyer" value="envoyer">
-<br>
+<body><form action="">
 
-<?php
-require_once "controller.php";
-
-
-?>
-
-</form>
+    <button>actualiser </button>
+    <?php  afficher($glossaire); ?>
+    </form>
+   
     
 </body>
 </html>
+    
+

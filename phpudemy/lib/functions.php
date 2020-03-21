@@ -212,6 +212,7 @@ function handleRequest($request)
                     $message = 'Unknown upload error';
 
                     break;
+                    
             }
 
             echo $message;
