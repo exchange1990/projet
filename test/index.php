@@ -11,7 +11,7 @@
 <label >entrer la categorie</label><br>
 <input type="text" name="categorie" placeholder="categorie" required><br>
 
-<label >entrer le titre</label><br>
+<label >entrer l titre</label><br>
 <input type="text" name="titre" placeholder="titre" required><br>
 
 <label >entrer le chemin de votre image</label><br>
