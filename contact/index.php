@@ -6,6 +6,7 @@ if(isset($_POST['user']) && isset($_POST['email']) && isset($_POST['password']) 
     $email=validateInput($_POST['email']);
     $password=validateInput($_POST['password']);
     $cpassword=validateInput($_POST['cpassword']);
+    
 
     if(!comparePwd($password,$cpassword)){
         $errormessage="password d'ont match";
@@ -50,7 +51,8 @@ if(isset($_POST['user']) && isset($_POST['email']) && isset($_POST['password']) 
             </div>
         </div>
         <?php echo $errormessage;
-        echo "<h2>merci pour vous $nom</h2>";?>
+        echo "<h2>merci pour vous $nom</h2>";
+        ?>
 
 
     </form>
